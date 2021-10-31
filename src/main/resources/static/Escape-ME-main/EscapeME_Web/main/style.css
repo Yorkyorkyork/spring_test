@@ -1,0 +1,256 @@
+
+/* reset */
+@import url("../tools/reset.css");
+/* ---------fonts---------- */
+@import url("../tools/EsME_fonts.css");
+/* ---------共通設定--------- */
+@import url("../tools/EsME_basic_setting.css");
+
+/* nav */
+
+nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 50px;
+    padding-right: 15px;
+    top: 0;
+    background-color: #333533;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    width: 100px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav ul li a{
+    color: #fef9ef;
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+}
+nav ul li a span{
+    padding-left: 32px;
+    transition: all 0.5s ease-in-out;
+}
+nav ul li a p{
+    color: #fef9ef;
+    min-width: 64px;
+    font-size: 15px;
+    opacity: 0;
+    transition: all .8s ease-in-out;
+}
+nav ul li a:hover span{
+    padding-left: 0px;
+}
+nav ul li a:hover p{
+    opacity: 1;
+}
+.Logo{
+    height: 35px;
+    margin-left: 50px;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+  .material-icons.md-36 { font-size: 30px; }
+  .material-icons.color { color: #fef9ef; }
+
+
+  /* startIcon */
+.startIcon{
+    position: fixed;
+    bottom: 50px;
+    right: 0px;
+    height: 70px;
+    width: 300px;
+    text-align: center;
+}
+.startIcon img{
+    height: 60px;
+    z-index: 100;
+    transition: all .3s;
+}
+.startIcon img:hover{
+    height: 63px;
+}
+
+body{
+    background: url("../images/background/pixel_bg_sky.png");
+    /* background-size: cover; */
+    background-repeat: repeat;
+    /* background-position: ; */
+    width: 100%;
+}
+.wrap{
+    max-width: 960px;
+    margin: auto;
+}
+.about .wrap .item{
+    width: 300px;
+    margin: 0 10px;
+    margin-top: 50px;
+    text-align: center;
+}
+.about > h2{
+    text-align: center;
+    font-size: 42px;
+    width: 100%;
+    padding: 20px 0;
+    margin: auto;
+}
+.about > p{
+    width: 660px;
+    margin: auto;
+    padding: 20px 0 40px;
+    text-align: center;
+}
+
+/* main */
+
+.margin{
+    margin-top: 50px;
+}
+
+.container {
+    display: grid;
+    margin-top: 30px;
+	grid-template-columns: 320px 320px 320px;
+    grid-template-rows: 60px 125px 125px 125px 125px 40px;
+    border: #697268 solid 1px;
+}
+.box {
+    border: #697268 solid 1px;
+	font-size: 150%;
+}
+
+.picture {
+	grid-column-start: 1;
+    grid-column-end:  3;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    
+}
+.picture img{
+    height: 100%;
+    
+    /* width: 100%; */
+    
+}
+.name {
+	grid-column-start: 3;
+    grid-column-end:  4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: white;
+}
+.name img{
+    margin: 5px;
+    height: 80%;
+    border: lightgray solid 2px;
+    border-radius: 50%;
+}
+.name p{
+    display: inline;
+    position: relative;
+    bottom: 30px;
+}
+.name .hashtag{
+    display: block;
+    position: relative;
+    top: -30px;
+    left: 65px;
+    font-size: small;
+}
+.word{
+	grid-column-start: 3;
+    grid-column-end:  4;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    overflow: auto;
+    background-color: white;
+}
+.word p.article{
+    font-size: 75%;
+    margin: 10px;
+    padding-left: 3px;
+}
+.word .message{
+    margin: 10px;
+    padding-left: 3px;
+}
+.word .message p{
+    display: inline;
+}
+.word p.userId{
+    font-size: 75%;    
+    font-weight: 600;
+    color: #77B6EA
+}
+.word p.msgContent{
+    font-size: 16px;
+    font-weight: 100;
+}
+.comments{
+    grid-column-start: 3;
+    grid-column-end:  4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    background-color: white;
+
+    display: grid;
+    /* margin-top: 30px; */
+	grid-template-columns: 260px 60px;
+}
+.comments .comText{
+    grid-column-start: 1;
+    grid-column-end:  2;
+    font-size: medium;
+    border:none;
+    padding-left: 10px;
+    line-height: 100%;
+    width: 100%;
+}
+.comments .sentBt{
+    grid-column-start: 2;
+    grid-column-end:  3;
+    font-size: large;
+    line-height: 95%;
+    width: 97%;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-left: #333533 solid 2px;
+    background-color: white;
+}
+.sentBt:hover{
+    background-color: lightgray;
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape ME | 跳脫舒適圈的社交平台 | 註冊</title>
+    <link rel="icon" href="../images/logo/ME_webicon_round_r.png" />
+    <link rel="stylesheet" href="Login_SignUp.css" />
+  </head>
+  <body>
+    <!-- 導覽列 用header包 flex-->
+    <header>
+      <!--div logo img -->
+      <div id="main_logo">
+        <a href="EscapeME_Home.html">
+          <img
+            src="../images/logo/EsME_logo_rectangle.png"
+            alt="Escape ME logo"
+          />
+        </a>
+      </div>
+      <!-- div nav -->
+      <nav>
+        <a href="EscapeME_Login.html">登入</a>
+        <p>&emsp;|&emsp;</p>
+        <a href="EscapeME_SignUp.html">註冊</a>
+      </nav>
+    </header>
+
+    <!-- 主要內容 + 頁尾 grid -->
+    <div class="container">
+      <!-- 主要內容 （圖片+登入/註冊表單）grid-->
+      <div class="main_login_signup">
+        <!--div 圖片 -->
+        <div class="login_signup" id="login_images">
+          <img src="../images/logo/EsME_logo_APP.png" alt="Logo of Escape ME" />
+        </div>
+        <!--div 登入/註冊表單 -->
+        <div class="login_signup" id="login_content">
+          <h2 id="signUp_h2">Sign Up</h2>
+
+            <input
+              type="email"
+              name="email"
+              id="signup_email"
+              placeholder="Email"
+            />
+            <p class="input_info" id="email_input_info"></p>
+            
+            <input
+            type="password"
+            name="password"
+            id="signup_password"
+            placeholder="Password"
+            />
+            <p class="input_info" id="password_input_info"></p>
+            
+            <input
+            type="password"
+            name="confirm_password"
+            id="signup_confirm_password"
+            placeholder="Confirm Password"
+            />
+            <p class="input_info" id="confirm_password_input_info"></p>
+
+            <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Nick Name"
+            />
+            
+            <input
+            type="tel"
+            name="user_phone_number"
+            id="user_phone_number"
+            placeholder="Phone Number"
+            />
+            <p class="input_info" id="phone_input_info"></p>
+            
+            <button class="submit_btn" id="signup_submit" type="submit">Sign Up</button>
+
+            <p>
+              <a href="EscapeME_Login.html">我有帳號了</a>
+            </p>
+          
+        </div>
+      </div>
+    </div>
+
+      <!--div 頁尾 -->
+      <footer>
+        <p>國立臺北科技大學</p>
+        <p>Java & Android 程式設計人才養成班</p>
+        <p>017 期 第二組 期末專題製作</p>
+        <p id="rights">2021 Escape ME All Rights Reserved</p>
+      </footer>
+
+      <script src="./Signup_json.js"></script>
+  </body>
+</html>

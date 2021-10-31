@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Escape ME | 跳脫舒適圈的社交平台 | 登入</title>
+    <link rel="icon" href="../images/logo/ME_webicon_round_r.png" />
+    <link rel="stylesheet" href="../tools/reset.css" />
+    <link rel="stylesheet" href="Login_SignUp.css" />
+  </head>
+  <body>
+    <!-- 導覽列 用header包 flex-->
+    <header>
+      <!--div logo img -->
+      <div id="main_logo">
+        <a href="EscapeME_Home.html">
+          <img
+            src="../images/logo/EsME_logo_rectangle.png"
+            alt="Escape ME logo"
+          />
+        </a>
+      </div>
+      <!-- div nav -->
+      <nav>
+        <a href="EscapeME_Login.html">登入</a>
+        <p>&emsp;|&emsp;</p>
+        <a href="EscapeME_SignUp.html">註冊</a>
+      </nav>
+    </header>
+
+    <!-- 主要內容 + 頁尾 grid -->
+    <div class="container">
+      <!-- 主要內容 （圖片+登入/註冊表單）grid-->
+      <div class="main_login_signup">
+        <!--div 圖片 -->
+        <div class="login_signup" id="login_images">
+          <img src="../images/logo/EsME_logo_APP.png" alt="Logo of Escape ME" />
+        </div>
+        <!--div 登入/註冊表單 -->
+        <div class="login_signup" id="login_content">
+          <h2>Login</h2>
+
+            <input
+              type="email"
+              name="email"
+              id="login_email"
+              placeholder="Email"
+            />
+
+            <input
+              type="password"
+              name="password"
+              id="login_password"
+              placeholder="Password"
+            />
+
+            <button class="submit_btn" id="login_submit" type="submit">Login</button>
+
+            <p>
+              <a href="">忘記密碼</a>&emsp;|&emsp;<a href="EscapeME_SignUp.html">我要註冊</a>
+            </p>
+          
+        </div>
+      </div>
+
+    </div>
+      <!--div 頁尾 -->
+      <footer>
+        <p>國立臺北科技大學</p>
+        <p>Java & Android 程式設計人才養成班</p>
+        <p>017 期 第二組 期末專題製作</p>
+        <p id="rights">2021 Escape ME All Rights Reserved</p>
+      </footer>
+
+      <script src="./Login_json.js?1"></script>
+  </body>
+</html>
